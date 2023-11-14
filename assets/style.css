@@ -533,3 +533,27 @@ h2{
     width: 100%;
     border-radius: 10px;
  }
+
+ @media (max-width:992px) {
+    .blog-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+     }
+ }
+
+ @media (max-width:768px) {
+    .blog-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+     }
+
+     .card img{
+        width: 100%;
+        border-radius: 10px;
+        aspect-ratio: 4/2;
+     }
+ }
